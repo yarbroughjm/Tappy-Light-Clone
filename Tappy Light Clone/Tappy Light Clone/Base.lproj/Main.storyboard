@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tappy_Light_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tappy Light Clone iPhone BG" translatesAutoresizingMaskIntoConstraints="NO" id="SxS-xQ-H8R">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Traffic-Light-Off-2400px" translatesAutoresizingMaskIntoConstraints="NO" id="Sld-R2-s0s">
+                                <rect key="frame" x="112.66666666666669" y="28" width="189" height="189.66666666666666"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Sld-R2-s0s" secondAttribute="height" multiplier="1:1" id="1mR-pe-ewr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oF1-89-Hka">
+                                <rect key="frame" x="20" y="298" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="fFi-RP-LkM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTW-24-lOT">
+                                <rect key="frame" x="112.66666666666669" y="432.66666666666674" width="189" height="189.33333333333326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NTW-24-lOT" secondAttribute="height" multiplier="1:1" id="NyH-AN-pqJ"/>
+                                </constraints>
+                                <state key="normal" title="Press" backgroundImage="Red Light"/>
+                                <connections>
+                                    <action selector="StartStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="opv-js-vlV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sld-R2-s0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="34L-QQ-Yzd"/>
+                            <constraint firstItem="oF1-89-Hka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6mN-1G-pqI"/>
+                            <constraint firstItem="NTW-24-lOT" firstAttribute="top" secondItem="oF1-89-Hka" secondAttribute="bottom" constant="75" id="7EM-19-PZN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NTW-24-lOT" secondAttribute="bottom" constant="114" id="Cvy-9P-0qJ"/>
+                            <constraint firstItem="NTW-24-lOT" firstAttribute="leading" secondItem="Sld-R2-s0s" secondAttribute="leading" id="En6-aJ-dJf"/>
+                            <constraint firstItem="NTW-24-lOT" firstAttribute="top" secondItem="oF1-89-Hka" secondAttribute="bottom" constant="75" id="H5e-OL-pqL"/>
+                            <constraint firstItem="SxS-xQ-H8R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="I0b-rY-hi4"/>
+                            <constraint firstAttribute="trailing" secondItem="SxS-xQ-H8R" secondAttribute="trailing" id="Jdx-Pg-Yf6"/>
+                            <constraint firstItem="oF1-89-Hka" firstAttribute="top" secondItem="Sld-R2-s0s" secondAttribute="bottom" constant="80" id="Jme-9j-zcg"/>
+                            <constraint firstItem="Sld-R2-s0s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="W91-gJ-3fE"/>
+                            <constraint firstItem="SxS-xQ-H8R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cuw-Nw-KXV"/>
+                            <constraint firstItem="NTW-24-lOT" firstAttribute="trailing" secondItem="Sld-R2-s0s" secondAttribute="trailing" id="gLu-U7-ECf"/>
+                            <constraint firstItem="NTW-24-lOT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lTP-Ra-5rd"/>
+                            <constraint firstItem="oF1-89-Hka" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sDc-Ma-G8f"/>
+                            <constraint firstItem="oF1-89-Hka" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sOn-dZ-jhh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SxS-xQ-H8R" secondAttribute="bottom" id="zic-jV-hEF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="startStopButton" destination="NTW-24-lOT" id="WVb-Q9-OHX"/>
+                        <outlet property="timerCounterLabel" destination="oF1-89-Hka" id="vIb-Kw-Yp8"/>
+                        <outlet property="trafficLight" destination="Sld-R2-s0s" id="njz-2J-lSu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Red Light" width="600" height="600"/>
+        <image name="Tappy Light Clone iPhone BG" width="1080" height="1920"/>
+        <image name="Traffic-Light-Off-2400px" width="2042" height="2400"/>
+    </resources>
+</document>
